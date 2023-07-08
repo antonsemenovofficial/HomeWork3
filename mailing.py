@@ -1,5 +1,3 @@
-from address import Address
-
 to_address = ''
 from_address = ''
 cost = ''
@@ -11,15 +9,10 @@ class Mailing:
         self.from_address = from_address
         self.cost = cost
         self.track = track
-    class Address:
-        def __init__(self, index, city, street, build, flat):
-            self.index = index
-            self.city = city
-            self.street = street
-            self.build = build
-            self.flat = flat
+    def sayMailing(self):
+        print("Куда:", self.to_address, "Откуда:", self.from_address, "Цена:", self.cost, "Трек-номер:", self.track )
 
 
-mailing2 = Mailing(1, 2, 5, 112233445566)
+mailing2 = Mailing('vv', 'self.from_address', 5, 112233445566)
 
-print(mailing2)
+mailing2.sayMailing()
