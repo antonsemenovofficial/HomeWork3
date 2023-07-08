@@ -11,5 +11,15 @@ class Mailing:
         self.from_address = from_address
         self.cost = cost
         self.track = track
+    class Address:
+        def __init__(self, index, city, street, build, flat):
+            self.index = index
+            self.city = city
+            self.street = street
+            self.build = build
+            self.flat = flat
 
-mailing2 = Mailing(to_address1, from_address1, 5, 112233445566)
+
+mailing2 = Mailing(1, 2, 5, 112233445566)
+
+print(mailing2)
