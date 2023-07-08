@@ -1,5 +1,4 @@
-import address from Address
-
+from address import Address
 
 to_address = ''
 from_address = ''
@@ -13,4 +12,4 @@ class Mailing:
         self.cost = cost
         self.track = track
 
-mailing = Mailing(to_address1, from_address1, 5, 112233445566)
+mailing2 = Mailing(to_address1, from_address1, 5, 112233445566)
