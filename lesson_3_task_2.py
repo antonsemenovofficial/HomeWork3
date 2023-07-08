@@ -1,11 +1,4 @@
-from user import User
+from smartphone import Smartphone
 
-my_user = User("Сергей", "Петров")
-
-my_user.sayName()
-my_user.sayLastname()
-my_user.sayFull()
-
-
-
+catalog = ''
 
